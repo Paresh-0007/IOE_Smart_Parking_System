@@ -1,0 +1,273 @@
+<!DOCTYPE html><html><head>
+      <title>Steps</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Paresh Gupta\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.19\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="smart-parking-system">SMART PARKING SYSTEM </h1>
+<h2 id="components-used">COMPONENTS USED: </h2>
+<ul>
+<li>ESP8266MOD</li>
+<li>2 resistors of 220ohms</li>
+<li>2 leds (red and blue)</li>
+<li>1 servo motor sg90</li>
+<li>3 IR sensors</li>
+<li>Breadboard and jumper wires</li>
+<li>1 micro USB data cable</li>
+</ul>
+<h3 id="step-1-setup-the-ciruit">STEP 1: SETUP THE CIRUIT </h3>
+<ul>
+<li>
+<p>On Breadboard, create a power rail using jumper wires to connect the power bank(or any battery which have output of 5V-3A) to the breadboard.</p>
+</li>
+<li>
+<p>Connect the VCC and GND pins of ESP8266MOD to the power rail + and - respectively.</p>
+</li>
+<li>
+<p>Connect the VCC and GND pins of each IR sensor to the power rail + and - respectively. Connect the OUT pin of first IR sensor to D1 pin of ESP8266MOD, second IR sensor to D2 pin of ESP8266MOD and third IR sensor to D3 pin of ESP8266MOD.</p>
+</li>
+<li>
+<p>Connect the servo motor's VCC and GND pins to the power rail + and - respectively. Connect the signal pin of servo motor to D4 pin of ESP8266MOD.</p>
+</li>
+<li>
+<p>Connect the anode (longer leg) of red LED to D5 pin of ESP8266MOD through a 220 ohm resistor and cathode (shorter leg) to GND rail.</p>
+</li>
+<li>
+<p>Connect the anode (longer leg) of blue LED to D6 pin of ESP8266MOD through a 220 ohm resistor and cathode (shorter leg) to GND rail.</p>
+</li>
+</ul>
+<h3 id="step-2-upload-the-code">STEP 2: UPLOAD THE CODE </h3>
+<ul>
+<li>
+<p>Open Arduino IDE and install the ESP8266 board from the board manager if you haven't already by going to Files -&gt; Preferences -&gt; Additional Board Manager URLs and adding this URL: <a href="https://arduino.esp8266.com/stable/package_esp8266com_index.json">https://arduino.esp8266.com/stable/package_esp8266com_index.json</a></p>
+</li>
+<li>
+<p>Go to Tools -&gt; Board -&gt; Board Manager, search for "ESP8266" and install "ESP8266 By ESP8266 Community".</p>
+</li>
+<li>
+<p>Go to Tools -&gt; Board and select "NodeMCU 1.0 (ESP-12E Module)".</p>
+</li>
+<li>
+<p>Install the Servo library by going to Sketch -&gt; Include Library -&gt; Manage Libraries, searching for "Servo" and installing it.</p>
+</li>
+<li>
+<p>Same for "ESP8266WiFi" library.</p>
+</li>
+<li>
+<p>Same for "PubSubClient" library.</p>
+</li>
+<li>
+<p>Copy and paste the code from smart_parking_cpp_code_version_mqtt.ino into the Arduino IDE.</p>
+</li>
+<li>
+<p>Replace the placeholders for WiFi SSID, WiFi Password, MQTT Broker address, MQTT Username, and MQTT Password with your actual credentials in the code.</p>
+</li>
+<li>
+<p>To get those parameters you need to set up a MQTT broker. You can use free brokers like Mosquitto MQTT and follow this few steps:</p>
+<ol>
+<li>
+<p>Go to <a href="https://mosquitto.org/download/">https://mosquitto.org/download/</a></p>
+</li>
+<li>
+<p>Download and install the broker according to your OS.</p>
+</li>
+<li>
+<p>Run the broker on your local machine or server.</p>
+</li>
+<li>
+<p>Connect the laptop in which the broker is installed and the ESP8266 to the same WiFi network.</p>
+</li>
+<li>
+<p>Go to command prompt and type "ipconfig" to get the IPv4 address of your machine. This will be your MQTT Broker address.</p>
+</li>
+<li>
+<p>Go to mosquitto installation directory and open the "mosquitto.conf" file in a text editor with admin access and make sure below lines are present and uncommented:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>listener 1883 0.0.0.0
+allow_anonymous true
+</code></pre></li>
+<li>
+<p>Save the file and restart the mosquitto broker.</p>
+</li>
+<li>
+<p>Now check whether the broker is working or not by using Admin Powershell commands like:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Get-Service mosquitto
+</code></pre><p>If the service is running, then your broker is set up successfully and If not run it manually.</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Start-Service mosquitto
+</code></pre><p>Again check the status using Get-Service command and Even if it is not running, then their might be some error in the configuration file. Check the log file in the installation directory for errors.</p>
+</li>
+<li>
+<p>Now you can use the IPv4 address of your machine as MQTT Broker address in the code. You can keep the username and password fields blank if you have set "allow_anonymous true" in the configuration file.</p>
+</li>
+<li>
+<p>Now you have got MQTT Broker address.</p>
+</li>
+<li>
+<p>For WiFi SSID and Password, use the credentials of the WiFi network to which your Laptop is connected.<br>
+For eg-If your WiFi SSID is "Home_Network" and password is "mypassword123", then replace the placeholders in the code as:</p>
+</li>
+</ol>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>const char* ssid = "Home_Network";
+const char* password = "mypassword123";
+</code></pre></li>
+<li>
+<p>Connect your ESP8266MOD to your computer using a micro USB data cable.</p>
+</li>
+<li>
+<p>In Arduino IDE, go to Tools -&gt; Port and select the port to which your ESP8266MOD is connected.</p>
+</li>
+<li>
+<p>Click on the Upload button (right arrow icon) to compile and upload the code to your ESP8266MOD.</p>
+</li>
+</ul>
+<h3 id="step-3-node-red-setup">STEP 3: NODE-RED SETUP </h3>
+<ul>
+<li>
+<p>Install Node-RED on your system by following the instructions at <a href="https://nodered.org/docs/getting-started/local">https://nodered.org/docs/getting-started/local</a></p>
+</li>
+<li>
+<p>Open Node-RED by running the command <code>node-red</code> in your terminal or command prompt.</p>
+</li>
+<li>
+<p>Open your web browser and go to <code>http://localhost:1880</code> to access the Node-RED interface.</p>
+</li>
+<li>
+<p>In the Node-RED interface, install the MQTT nodes by going to the menu (top right corner) -&gt; Manage palette -&gt; Install tab, then search for "node-red-contrib-mqtt-broker" and click on "Install".</p>
+</li>
+<li>
+<p>Import the provided Node-RED flow(nodered_dashboard.json) for the smart parking system by clicking on the menu -&gt; Import -&gt; Clipboard, then paste the flow JSON and click "Import".</p>
+</li>
+<li>
+<p>Double-click on the MQTT input nodes in the flow to configure them. Set the server to your MQTT broker address (the same one used in the ESP8266 code[mqtt_server]) and set the topic to match the topics used in the ESP8266 code.<br>
+i.e. The node (Vehicle Object Detection) should have topic as "parking/object" and for node (Status MQTT) should have topic as "parking/status".</p>
+</li>
+<li>
+<p>(Optional Step to Debug) Drag and drop a debug and mqtt input node from the left sidebar to the workspace.<br>
+Set the topic of mqtt input to "#" to subscribe to all topics. Connect the output of mqtt input node to the input of debug node.</p>
+</li>
+<li>
+<p>Keep the debug tab(a lady bug logo) open (right sidebar) to see the incoming messages from the ESP8266MOD.</p>
+</li>
+<li>
+<p>Deploy the flow by clicking on the "Deploy" button (top right corner).</p>
+</li>
+</ul>
+<h3 id="step-4-test-the-system">STEP 4: TEST THE SYSTEM </h3>
+<h4 id="1-mqtt-testing-using-node-red-debug-tab">1. MQTT TESTING USING NODE-RED DEBUG TAB </h4>
+<ul>
+<li>
+<p>Open the debug tab (a lady bug logo) in the right sidebar to see the incoming messages.</p>
+</li>
+<li>
+<p>Open a another pc connected to the same network as the MQTT broker.</p>
+</li>
+<li>
+<p>Install Mosquitto MQTT client on the PC.</p>
+</li>
+<li>
+<p>Open Admin Powershell on that PC and use the following command to subscribe to the topics:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>.\mosquitto_pub -h &lt;MQTT_BROKER_IP&gt; -t "parking/#" -m"hello from 2nd PC"
+</code></pre><p>Replace <code>&lt;MQTT_BROKER_IP&gt;</code> with the actual IP address of your MQTT broker.</p>
+</li>
+<li>
+<p>Now, In node-RED debug tab, you should see the message "hello from 2nd PC" indicating that the MQTT communication is working.</p>
+</li>
+<li>
+<p>If not and you are sure that mqtt is running properly, then check the firewall settings of your system and allow the mosquitto broker port(1883) through it.</p>
+</li>
+</ul>
+<h4 id="2-node-red-testing">2. Node-RED Testing </h4>
+<ul>
+<li>Open the Node-RED dashboard by going to <code>http://localhost:1880/ui</code> in your web browser.</li>
+<li>You should see the smart parking system interface with status indicators.</li>
+<li>Go to '/' and check whether the mqtt broker is connected or not. If connected, it will show "Connected" in green color.</li>
+<li>If not connected, check the MQTT broker settings in the MQTT input nodes and ensure that the broker is running.</li>
+</ul>
+<h4 id="3-smart-parking-system-testing">3. SMART PARKING SYSTEM TESTING </h4>
+<ul>
+<li>
+<p>Power on the ESP8266MOD by connecting it to the power bank or your power source.</p>
+</li>
+<li>
+<p>Wait for a few seconds for the system to initialize and let esp8266mod gets connected to your Wifi(You can check the device connected option if you are using your mobile as hotspot).</p>
+</li>
+<li>
+<p>Place an object (like a book or a box) in front of the first IR sensor to simulate a vehicle approaching the parking area.</p>
+</li>
+<li>
+<p>Place the object in front of first IR sensor, then led 1 must glow, and if you place the object in front of both IR sensor(1 and 2), then led 2 must glow.</p>
+</li>
+<li>
+<p>If first led glows means it bike and if second led glows means its a car.</p>
+</li>
+<li>
+<p>Now place the object in front of the third IR sensor to simulate the vehicle reaching the parking spot. The servo motor should rotate to open the gate, allowing the vehicle to "park".</p>
+</li>
+<li>
+<p>Simultaneously, check the Node-RED dashboard (accessible at <code>http://localhost:1880/ui</code>) to see the status updates of the parking system.</p>
+</li>
+<li>
+<p>Also check the debug tab in Node-RED to see the messages being published by the ESP8266MOD.</p>
+</li>
+</ul>
+<h3 id="conclusion">CONCLUSION </h3>
+<ul>
+<li>You have successfully set up a smart parking system using ESP8266MOD, IR sensors, a servo motor, and MQTT communication with Node-RED for monitoring.</li>
+<li>This system can be further enhanced by adding features like real-time notifications, multiple parking spots, and integration with mobile applications for a complete smart parking solution.</li>
+</ul>
+<h3 id="references">REFERENCES </h3>
+<ul>
+<li><a href="https://nodered.org/docs/getting-started/local">https://nodered.org/docs/getting-started/local</a></li>
+<li><a href="https://mosquitto.org/documentation/">https://mosquitto.org/documentation/</a></li>
+<li><a href="https://arduino.esp8266.com/stable/package_esp8266com_index.json">https://arduino.esp8266.com/stable/package_esp8266com_index.json</a></li>
+<li><a href="https://www.arduino.cc/en/Guide/ArduinoESP8266">https://www.arduino.cc/en/Guide/ArduinoESP8266</a></li>
+<li><a href="https://www.arduino.cc/en/Reference/Servo">https://www.arduino.cc/en/Reference/Servo</a></li>
+<li><a href="https://pubsubclient.knolleary.net/">https://pubsubclient.knolleary.net/</a></li>
+</ul>
+<h3 id="contributors">CONTRIBUTORS </h3>
+<ul>
+<li>Omkar Chandgaonkar (<a href="https://github.com/11byte">https://github.com/11byte</a>)</li>
+<li>Aditya Chaudhari (<a href="https://github.com/Classadi">https://github.com/Classadi</a>)</li>
+<li>Sanika Ghorad (<a href="https://github.com/Sanikaghorad05">https://github.com/Sanikaghorad05</a>)</li>
+<li>Paresh Gupta (<a href="https://github.com/Paresh-0007">https://github.com/Paresh-0007</a>)</li>
+</ul>
+<h3 id="license">LICENSE </h3>
+<ul>
+<li>This project is licensed under the MIT License - see the LICENSE file for details.</li>
+</ul>
+<h3 id="acknowledgements">ACKNOWLEDGEMENTS </h3>
+<ul>
+<li>We would like to thank the open-source community for providing valuable resources and libraries that made this project possible.</li>
+</ul>
+<hr>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

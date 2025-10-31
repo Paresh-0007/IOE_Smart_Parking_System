@@ -1,0 +1,49 @@
+[
+    {
+        "id": "bc689cbbb2a91039",
+        "type": "ui_template",
+        "z": "16ad25f436cedcdb",
+        "group": "right-group",
+        "name": "Slot Grid",
+        "order": 2,
+        "width": "12",
+        "height": "30",
+        "format": "<style>\n  .grid { display: grid; grid-gap: 5px; margin-bottom: 20px; }\n  .car-grid { grid-template-columns: repeat(3, 70px); }\n  .bike-grid { grid-template-columns: repeat(2, 70px); }\n  .slot { display:flex; align-items:center; justify-content:center; border:1px solid #ccc; border-radius:8px; font-weight:bold; color:#000; transition:all 0.3s ease; background:#b3e5fc; height:60px; }\n  .occupied { background: lightgreen !important; }\n</style>\n<h4>🚗 Car Slots</h4>\n<div id=\"carSlots\" class=\"grid car-grid\"></div>\n<h4>🏍 Bike Slots</h4>\n<div id=\"bikeSlots\" class=\"grid bike-grid\"></div>\n<h4>📡 System Status</h4>\n<div id=\"statusBox\" style=\"background:#222;color:#fff;padding:10px;border-radius:8px;min-height:40px\"></div>\n<script>\n(function(scope){\n  function createSlots(){\n    const car=document.getElementById('carSlots');\n    const bike=document.getElementById('bikeSlots');\n    for(let i=1;i<=9;i++){let d=document.createElement('div');d.className='slot';d.innerText='C'+i;car.appendChild(d);}\n    for(let i=1;i<=4;i++){let d=document.createElement('div');d.className='slot';d.innerText='B'+i;bike.appendChild(d);}\n  }\n  createSlots();\n  scope.$watch('msg',function(msg){\n    if(!msg) return;\n    if(msg.topic==='parking/object'){\n      if(msg.payload==='car'){\n        let s=document.querySelector('#carSlots .slot:not(.occupied)');\n        if(s) s.classList.add('occupied');\n      }else if(msg.payload==='bike'){\n        let s=document.querySelector('#bikeSlots .slot:not(.occupied)');\n        if(s) s.classList.add('occupied');\n      }\n    }\n    if(msg.topic==='parking/status'){\n      document.getElementById('statusBox').innerText=msg.payload;\n    }\n  });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 580,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "right-group",
+        "type": "ui_group",
+        "name": "Slots",
+        "tab": "parking-tab",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "parking-tab",
+        "type": "ui_tab",
+        "name": "Smart Parking",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c27c51ac8932e9fe",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
