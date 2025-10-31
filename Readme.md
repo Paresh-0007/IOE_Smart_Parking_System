@@ -1,5 +1,6 @@
 # SMART PARKING SYSTEM
-
+View the demonstration here:
+https://drive.google.com/file/d/1Tbk7ATrxpQ9Z8xw6FncxQ2p0qxjY-r0z/view?usp=sharing
 ## COMPONENTS USED:
 - ESP8266MOD
 - 2 resistors of 220ohms
@@ -91,6 +92,9 @@
 
 - Double-click on the MQTT input nodes in the flow to configure them. Set the server to your MQTT broker address (the same one used in the ESP8266 code[mqtt_server]) and set the topic to match the topics used in the ESP8266 code. 
 i.e. The node (Vehicle Object Detection) should have topic as "parking/object" and for node (Status MQTT) should have topic as "parking/status".
+<img width="1258" height="682" alt="Screenshot 2025-10-31 231430" src="https://github.com/user-attachments/assets/5e1c7970-55ad-4901-9955-b4a0b146f734" />
+<img width="1277" height="805" alt="Screenshot 2025-10-31 231445" src="https://github.com/user-attachments/assets/fd87d665-9f62-426b-a83c-a0018a3656c6" />
+<img width="1277" height="743" alt="Screenshot 2025-10-31 231528" src="https://github.com/user-attachments/assets/bd9362aa-7c0c-46ed-b2ba-e151f16a9083" />
 
 - (Optional Step to Debug) Drag and drop a debug and mqtt input node from the left sidebar to the workspace. 
 Set the topic of mqtt input to "#" to subscribe to all topics. Connect the output of mqtt input node to the input of debug node.
